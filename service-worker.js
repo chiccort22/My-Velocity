@@ -3,12 +3,17 @@
    Compatible con GitHub Pages / PWA / iOS
    ========================================================= */
 
-const CACHE_VERSION = 'velocidad-v7.5-offline-v1';
+const CACHE_VERSION = 'velocidad-v7.5-offline-v2';
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
 const APP_SHELL = [
-  './'
+  './',
+  './index.html',
+  './manifest.webmanifest?v=2',
+  './icon-192-v2.png',
+  './icon-512-v2.png',
+  './apple-touch-icon-v2.png'
 ];
 
 self.addEventListener('install', event => {
